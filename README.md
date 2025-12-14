@@ -4,7 +4,7 @@ Sistem Programlama ve Veri Yapıları bakış açısıyla veri tabanlarındaki p
 
 Aşağıda kutucuk (checkbox) ile gösterilen maddelerden en az birini seçtiğiniz açık kaynak kodlu bir VT kaynak kodları üzerinde göstererek açıklayınız. Açıklama bölümüne kısaca metninizi yazıp, kod üzerinde gösterim videonuzun linkini en altta belirtilen kutucuğa yerleştiriniz.
 
-- [X]  Kutucuğu seçim örneği
+- [X]  Seçtiğiniz konu/konuları bu şekilde işaretleyiniz. **!**
     
 ---
 
