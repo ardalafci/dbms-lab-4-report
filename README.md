@@ -17,7 +17,8 @@ Aşağıda kutucuk (checkbox) ile gösterilen maddelerden en az birini seçtiği
 
 ### VT için Page (Sayfa) Anlamı
 
-- [ ]  VT hangisini kullanır? **Satır/ Sayfa** okuması
+- [X]  VT hangisini kullanır? ** Sayfa** okuması
+
 
 ---
 
@@ -65,7 +66,7 @@ DB diske yazarken:
 
 PostgreSQL'in veriyi diskte nasıl adreslediğini (block_id + offset) ve bu adresleme için itemptr.h dosyasındaki ItemPointerData yapısını nasıl kullandığını teknik olarak inceledik. Özellikle md.c dosyasındaki mdreadv fonksiyonu üzerinden, veri tabanının FileReadV sistem çağrısıyla diskin belirli bir konumuna (seekpos) giderek nasıl Rastgele Erişim yaptığını ve seekpos += nbytes satırı ile işletim sistemi seviyesindeki eksik okumaları (Partial Read) nasıl yönettiğini kod seviyesinde kanıtladık.
 
-Nam sit amet tincidunt ante. Pellentesque sit amet quam interdum, pellentesque dui vel, iaculis elit. Donec sed dui sodales nulla dignissim tincidunt. Maecenas semper metus id fermentum vulputate. Pellentesque lobortis hendrerit venenatis. Nullam imperdiet, ex eget ultricies egestas, mauris nunc aliquam ante, sed consectetur tellus ex vel leo. Nunc ut erat dapibus, auctor dolor eu, pretium sem. In lacinia congue eros et finibus. Aenean auctor, leo a feugiat placerat, urna felis lacinia purus, laoreet volutpat mi nisl eget dui. Ut vitae condimentum leo.
+PostgreSQL'in sayfa bazlı çalıştığını PageHeaderData yapısındaki pd_linp dizisinden anlıyoruz. Bu dizi, tek bir sayfa içinde çok sayıda satırın adresini tutar. Biz diskten bu yapıyı bir bütün olarak okuduğumuzda, aslında içindeki tüm satırları ve sayfanın boş alan bilgilerini (pd_lower, pd_upper) tek seferde belleğe almış oluyoruz.
 
 Maecenas ex diam, vehicula et nulla vel, mattis viverra metus. Nam at ex scelerisque, semper augue lobortis, semper est. Etiam id pretium odio, eget rutrum neque. Pellentesque blandit magna vel aliquam gravida. Nullam massa nisl, imperdiet at dapibus non, cursus vehicula turpis. Vestibulum rutrum hendrerit augue. Aliquam id nisi id arcu tempor venenatis vel nec erat. Morbi sed posuere erat. Morbi et sollicitudin urna. Suspendisse ullamcorper vitae purus sit amet sodales. Nam ut tincidunt ipsum, ut varius erat. Duis congue magna nec euismod condimentum. In hac habitasse platea dictumst. Nunc mattis odio sed enim laoreet imperdiet. In hac habitasse platea dictumst. Nullam tincidunt quis.
 
