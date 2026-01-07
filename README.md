@@ -17,7 +17,7 @@ Aşağıda kutucuk (checkbox) ile gösterilen maddelerden en az birini seçtiği
 
 ### VT için Page (Sayfa) Anlamı
 
-- [X]  VT hangisini kullanır? ** Sayfa** okuması
+- [X]  VT hangisini kullanır? **Sayfa** okuması
 
 
 ---
