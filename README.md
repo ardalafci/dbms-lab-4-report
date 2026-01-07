@@ -12,8 +12,8 @@ Aşağıda kutucuk (checkbox) ile gösterilen maddelerden en az birini seçtiği
 
 ### Disk Erişimi
 
-- [ ]  **Blok bazlı disk erişimi** → block_id + offset
-- [ ]  Rastgele erişim
+- [X]  **Blok bazlı disk erişimi** → block_id + offset
+- [X]  Rastgele erişim
 
 ### VT için Page (Sayfa) Anlamı
 
@@ -63,7 +63,7 @@ DB diske yazarken:
 
 # Açıklama (Ort. 600 kelime)
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse lacinia luctus urna, vel aliquet lacus facilisis ac. Donec quis placerat orci, efficitur consectetur lacus. Sed rhoncus erat ex, at sagittis velit mollis et. Aliquam enim orci, sollicitudin sit amet libero quis, mollis ultricies risus. Fusce tempor, felis a consequat tristique, dolor magna convallis nulla, vel ullamcorper magna mauris non ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam quis imperdiet ex, at blandit sapien. Aliquam lacinia erat ac ipsum fringilla, quis vestibulum augue posuere. Nulla in enim nulla. Nunc euismod odio mauris, sed sollicitudin ex condimentum non. In efficitur egestas enim. Fusce tempus erat quis placerat convallis.
+PostgreSQL'in veriyi diskte nasıl adreslediğini (block_id + offset) ve bu adresleme için itemptr.h dosyasındaki ItemPointerData yapısını nasıl kullandığını teknik olarak inceledik. Özellikle md.c dosyasındaki mdreadv fonksiyonu üzerinden, veri tabanının FileReadV sistem çağrısıyla diskin belirli bir konumuna (seekpos) giderek nasıl Rastgele Erişim yaptığını ve seekpos += nbytes satırı ile işletim sistemi seviyesindeki eksik okumaları (Partial Read) nasıl yönettiğini kod seviyesinde kanıtladık.
 
 Nam sit amet tincidunt ante. Pellentesque sit amet quam interdum, pellentesque dui vel, iaculis elit. Donec sed dui sodales nulla dignissim tincidunt. Maecenas semper metus id fermentum vulputate. Pellentesque lobortis hendrerit venenatis. Nullam imperdiet, ex eget ultricies egestas, mauris nunc aliquam ante, sed consectetur tellus ex vel leo. Nunc ut erat dapibus, auctor dolor eu, pretium sem. In lacinia congue eros et finibus. Aenean auctor, leo a feugiat placerat, urna felis lacinia purus, laoreet volutpat mi nisl eget dui. Ut vitae condimentum leo.
 
