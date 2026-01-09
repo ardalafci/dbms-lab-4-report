@@ -60,7 +60,7 @@ DB diske yazarken:
 
 ---
 
-# Video [Linki](https://www.youtube.com/watch?v=Nw1OvCtKPII&t=2635s) 
+# Video [Linki](https://youtu.be/7bdKTGqPug4) 
 
 
 ---
